@@ -89,7 +89,7 @@ function game() {
     }
     function third() {
         document.getElementById("third").style.display = "block"
-        document.getElementById("score").innerText = "Score:" + Math.round(( 1000 / deta.time ) ** 2 * 10000)
+        document.getElementById("score").innerText = "Score:" + Math.round(( 1000 / deta.time ) ** 2 * 100000 * deta.hit / deta.total)
         document.getElementById("time").innerText = "時間:" + Math.round(deta.time / 10) / 100 + "s"
         document.getElementById("speed").innerText = "KPM:" + Math.round(240000 / deta.time * 10) / 10
         document.getElementById("accuracy").innerText = "正確率:" + Math.round(deta.hit / deta.total * 1000) / 10 + "%"
