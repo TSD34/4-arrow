@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4 Arrows</title>
+    <link rel="icon" href="img/arrow.png">
+    <script src="script.js"></script>
+    <style>
+        .box {
+			position: relative;
+		}
+		.content {
+			position: absolute;
+			inset: 0px;
+			margin: auto;
+		}
+    </style>
+</head>
+<body onload="start()">
+    <div id="start">
+        <img src="img/startimg.png" style="display: block; margin: 0px auto; position: relative; top: -208px;" id="startimg">
+        <button style="display: none; margin: 0px auto; position: relative; top: 300px;" id="startbutton" type="button" onclick="game()">
+            <img src="img/start.png">
+        </button>
+    </div>
+    <div id="game" style="display: none;">
+        <div class="box" style="height: 633px;" id="first">
+            <img src="img/3.png" id="countdown" style="width: 59px; height: 96px;" class="content">
+        </div>
+        <div id="second" style="display: none; height: 633px;">
+            <div style="height: 633px;" class="box">
+                <h1 style="width: 100px; height: 150px; font-size: 100px;" class="content" id="key">↑</h1>
+            </div>
+            <div style="height: 36px; top: -497px;" class="box">
+                <h2 style="text-align: center;" id="number">1/40</h2>
+            </div>
+        </div>
+        <div id="third" style="display: none; text-align: center; margin-top: 100px;">
+            <h1 id="score" style="visibility: hidden;"></h1>
+            <h2 id="time" style="display: none;"></h2>
+            <h2 id="speed" style="display: none;"></h2>
+            <h2 id="accuracy" style="display: none;"></h2>
+        </div>
+    </div>
+</body>
+</html>
